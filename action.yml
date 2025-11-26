@@ -12,19 +12,19 @@ inputs:
   length: 
     description: 'number of words'
     required: false
-    default: 2      
+    default: '2'      
   useToken: 
     description: 'add a unique token to name'
     required: false
-    default: false
+    default: 'false'
   capitalize:
     description: 'capitalise words'
     required: false
-    default: false 
+    default: 'false' 
   
 outputs:
   release-name: # the output
     description: 'your new release name'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'index.js'

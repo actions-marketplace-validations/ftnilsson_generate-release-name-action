@@ -1,18 +1,23 @@
 {
   "name": "release-name-action",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.3",
+  "description": "generate awesome release names",
   "main": "index.js",
-  "node": ">=16",
+  "engines": {
+    "node": ">=20"
+  },
+  "node": ">=20",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "dev": "node test-action.js"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ftnilsson/release-name-action.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "s",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ftnilsson/release-name-action/issues"
@@ -20,8 +25,9 @@
   "homepage": "https://github.com/ftnilsson/release-name-action#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@actions/github": "^5.1.1",
-    "awesome-release-name-generator": "^1.0.1",
-    "node": "^20.5.1"
+    "@actions/github": "^6.0.1"    
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
